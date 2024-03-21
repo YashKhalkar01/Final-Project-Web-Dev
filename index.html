@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Final Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class='page'>
+        <section class="bgImg">
+        </section>
+        <section class="todo">
+            <div class="todoTitle">
+                <div class="todoBtn"><button class="addBtn">Add todo</button></div>
+                <div class="textTodo">
+                    <h1>TODO</h1>
+                </div>
+            </div>
+            <div class="todoList">
+                <div class="alignData">
+                    <div class="text">
+                        <div class="get">
+                            <div class="header">Complete HTML Learning</div>
+                            <button disabled="disabled"
+                                style="background-color: #367BF5; color: white; font-size: 1rem; border-radius: 15px; width: 2rem; border:0;">!!</button>
+                        </div>
+                        <div class="para">Learn all HTML semantic tags, learn new article tag</div>
+                    </div>
+                    <div class="delete"><button class="deleteFont"><i class="fa fa-trash"
+                                aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                <div class="alignData">
+                    <div class="text">
+                        <div class="get">
+                            <div class="header">Learn map() method</div>
+                            <button disabled="disabled"
+                                style="background-color: #EA3D2F; color: white; font-size: 1rem; border-radius: 15px; width: 2rem; border:0;">!!!</button>
+                        </div>
+                        <div class="para">Learn how to implement map method in javascript</div>
+                    </div>
+                    <div class="delete"><button class="deleteFont"><i class="fa fa-trash"
+                                aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                <div class="alignData">
+                    <div class="text">
+                        <div class="get">
+                            <div class="header">Take notes</div>
+                            <button disabled="disabled"
+                                style="background-color: #367BF5; color: white; font-size: 1rem; border-radius: 15px; width: 2rem; border:0;">!!</button>
+                        </div>
+                        <div class="para">Take notes regarding css fundamentals</div>
+                    </div>
+                    <div class="delete"><button class="deleteFont"><i class="fa fa-trash"
+                                aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                <div class="alignData">
+                    <div class="text">
+                        <div class="get">
+                            <div class="header">Water Plants</div>
+                            <button disabled="disabled"
+                                style="background-color: #2FA84F; color: white; font-size: 1rem; border-radius: 15px; width: 2rem; border:0;">!</button>
+                        </div>
+                        <div class="para">Water all plants in garden</div>
+                    </div>
+                    <div class="delete"><button class="deleteFont"><i class="fa fa-trash"
+                                aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="todoInputPage">
+        <div class="popup">
+            <div class="allInputs">
+                <div class="name">
+                    <div class="nameLabel" style="margin-left: 1rem;"><label for="nameT">Todo Name</label></div>
+                    <div class="nameInput">
+                        <input type="text" id="nameT" placeholder="Enter todo list name">
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="desLabel" style="margin-left: 1rem;"><label for="descriptionT">Description</label></div>
+                    <div class="desInput">
+                        <textarea name="" id="descriptionT" cols="30" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="priority">
+                    <div class="priorityLabel" style="margin-left: 1rem;"><label for="priorityS">Priority</label></div>
+                    <div class="priorityInput">
+                        <select name="Priority" id="priorityS">
+                            <option value="">---Select---</option>
+                            <option value="high">High</option>
+                            <option value="medium">Medium</option>
+                            <option value="low">Low</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="submitContainer">
+                <button class="save">Save</button>
+                <button class="cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
