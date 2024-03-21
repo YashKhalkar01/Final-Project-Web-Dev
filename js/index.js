@@ -10,6 +10,10 @@ function printData() {
   let dta = localStorage.getItem("data");
   let dtalist = document.querySelector(".todoList");
 
+  if (dta === null) {
+    return;
+  }
+  
   dta = JSON.parse(dta);
 
   let list = dta.map((value) => {
