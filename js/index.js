@@ -3,7 +3,7 @@ let element = document.querySelector(".todoInputPage");
 let cancel = document.querySelector(".cancel");
 // console.log(addBtn)
 cancel.addEventListener("click", () => {
-  window.location.replace("/index.html");
+  element.style.visibility = "hidden";
 });
 
 function printData() {
@@ -50,7 +50,7 @@ addBtn.addEventListener("click", () => {
 });
 
 let save = document.querySelector(".save");
-console.log(save);
+// console.log(save);
 save.addEventListener("click", () => {
   let nameT = document.querySelector("#nameT");
   let descriptionT = document.querySelector("#descriptionT");
@@ -105,6 +105,7 @@ save.addEventListener("click", () => {
   console.log(a);
   let element = document.querySelector(".todoInputPage");
   element.style.visibility = "hidden";
+  window.location.reload();
 });
 
 function removeTodo() {
